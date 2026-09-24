@@ -255,13 +255,18 @@ h2 {
 .step h3 { margin: 16px 0 6px; font-size: 19px; letter-spacing: -0.01em; }
 .step p { margin: 0; color: var(--muted); font-size: 16px; }
 
+/* Flex rather than grid so a final short row (5 cards, 3 + 2) centers
+   instead of hanging off to the left. */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
 }
 
 .card {
+  flex: 1 1 280px;
+  max-width: 328px;
   background: var(--surface);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius);
