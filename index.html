@@ -1,20 +1,221 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Harklo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HarkLo — voice memos that react back</title>
+    <meta
+      name="description"
+      content="HarkLo is a voice and video memo app for people you actually know. It records your friends' reactions while they listen, pinned to the moment they happened."
+    />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta property="og:title" content="HarkLo — voice memos that react back" />
+    <meta
+      property="og:description"
+      content="Send a voice memo. Hear what they actually thought — reactions recorded while they listen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harklo.net/" />
+    <meta property="og:image" content="https://harklo.net/img/icon.png" />
   </head>
-  <body style="font-family: system-ui; max-width: 760px; margin: 80px auto; padding: 24px; line-height: 1.6;">
-    <h1>Harklo</h1>
-    <p>Voice memos with real reactions.</p>
 
-    <p>
-      <a href="/support">Support</a> ·
-      <a href="/privacy">Privacy Policy</a> ·
-      <a href="/terms">Terms of Service</a>
-    </p>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="/img/icon.png" alt="" />
+          HarkLo
+        </a>
+        <nav class="site-nav">
+          <a href="#how" class="hide-sm">How it works</a>
+          <a href="/support">Support</a>
+          <a href="mailto:harklosupport@proton.me">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <p>Questions or reports: <a href="mailto:harklosupport@proton.me">harklosupport@proton.me</a></p>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <span class="pill"><span class="dot"></span> Closed beta · iPhone</span>
+
+          <h1>Send a voice memo.<br />Hear what they actually thought.</h1>
+
+          <p class="lede">
+            Text flattens everything into the same grey bubble. HarkLo keeps the
+            voice — yours, and theirs. While a friend listens to your memo, it
+            records their reactions and pins each one to the moment it happened.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:harklosupport@proton.me?subject=HarkLo%20beta%20invite"
+              >Ask for a beta invite</a
+            >
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+
+          <p class="hero-note">Coming to the App Store. Made for iPhone.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone">
+            <img
+              src="/img/listen.jpg"
+              width="720"
+              height="1210"
+              alt="The Listen screen in HarkLo, with buttons to flag a moment, record a long reaction, or pause to type"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="how">
+      <div class="wrap">
+        <p class="section-label">How it works</p>
+        <h2>Three steps, and the conversation has a pulse again</h2>
+        <p class="section-lede">
+          A memo goes out, a friend listens, and what comes back is more than a
+          thumbs up — it's their actual voice, at the exact second it happened.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-n">1</span>
+            <img
+              src="/img/record.jpg"
+              class="crop-bottom"
+              width="720"
+              height="1060"
+              alt="Recording a voice memo in HarkLo, with a live waveform"
+              loading="lazy"
+            />
+            <h3>Say it out loud</h3>
+            <p>
+              Record a voice or video memo — as long as it needs to be. Every
+              memo is transcribed, so anyone can read it instead when they
+              can't listen.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-n">2</span>
+            <img
+              src="/img/prompt.jpg"
+              width="720"
+              height="1111"
+              alt="HarkLo asking whether to record reactions while a voice memo plays"
+              loading="lazy"
+            />
+            <h3>They listen, and react</h3>
+            <p>
+              When a friend opens your memo, HarkLo offers to listen along with
+              the mic on. Laughs, questions, the sharp intake of breath — all of
+              it is kept.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-n">3</span>
+            <img
+              src="/img/listen.jpg"
+              width="720"
+              height="1210"
+              alt="Reaction controls: flag a moment, record a long reaction, or pause to type"
+              loading="lazy"
+            />
+            <h3>Reactions land on the timeline</h3>
+            <p>
+              Flag a moment to come back to. Hold a longer thought and the
+              original pauses for it. Or stop and type. Each reaction stays
+              attached to its second in the audio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="section-label">What's inside</p>
+        <h2>Built for a handful of people, not an audience</h2>
+        <p class="section-lede">
+          No feed, no follower counts, nothing to broadcast. Just the people you
+          chose, and a better way to hear them.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Transcripts for everything</h3>
+            <p>
+              Every voice memo is transcribed automatically, so you can read a
+              memo in a quiet room and search for what someone said months ago.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Conversations inside a memo</h3>
+            <p>
+              A single memo can hold several threads, so a tangent gets its own
+              place instead of burying the thing you were talking about.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Groups that stay small</h3>
+            <p>
+              Make a group, name the conversations inside it, and let everyone
+              react in their own voice at their own time.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Notifications on your terms</h3>
+            <p>
+              Hold your notifications and get them at a few fixed times a day
+              instead of the moment they arrive. Quiet hours, too.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Mutual by design</h3>
+            <p>
+              Connections go both ways — you each add the other. You decide
+              whether you can be found by username, email or phone number.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Block and report, taken seriously</h3>
+            <p>
+              Blocking is immediate and symmetrical. Reports are reviewed within
+              24 hours, and there's no tolerance for abuse.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap" style="text-align: center">
+        <h2>Want in on the beta?</h2>
+        <p class="section-lede" style="margin: 0 auto 28px">
+          HarkLo is in a closed beta on iPhone. Send a note and we'll add you to
+          the list.
+        </p>
+        <a class="btn btn-primary" href="mailto:harklosupport@proton.me?subject=HarkLo%20beta%20invite"
+          >harklosupport@proton.me</a
+        >
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>© 2026 HarkLo</div>
+        <nav class="footer-links">
+          <a href="/support">Support</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="mailto:harklosupport@proton.me">harklosupport@proton.me</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

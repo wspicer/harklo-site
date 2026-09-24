@@ -1,0 +1,4 @@
+{
+  "cleanUrls": true,
+  "redirects": [{ "source": "/support.html", "destination": "/support", "permanent": true }]
+}
